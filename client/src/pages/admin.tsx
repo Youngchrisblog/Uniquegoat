@@ -72,7 +72,7 @@ export default function Admin() {
     ];
 
     const bodies = [
-      "Here's exactly what changed everything:\n\n✅ Learned proper risk management\n✅ Stopped chasing random stock tips\n✅ Followed a proven system daily\n✅ Got mentorship from 7-figure traders\n\nThe difference? I joined Options Trading University.",
+      "Here's exactly what changed everything:\n\n✅ Learned proper risk management\n✅ Stopped chasing random stock tips\n✅ Followed a proven system daily\n✅ Got mentorship from 7-figure traders\n\nThe difference? I joined Elite Options University.",
       "The secret nobody tells you:\n\n→ It's not about finding the next Tesla\n→ It's about reading charts like a pro\n→ Understanding support/resistance\n→ Managing your position sizes\n\nOur community taught me all of this.",
       "What actually works:\n\n📊 Daily premarket analysis\n📈 Live trading room support  \n🎓 Step-by-step video courses\n💬 1,500+ traders helping each other\n\nThis isn't theory. This is real profit.",
       "Stop doing this:\n❌ Trading based on Twitter hype\n❌ Going all-in on one trade\n❌ No stop losses\n❌ Learning alone\n\nStart doing this:\n✅ Following proven setups\n✅ Proper risk management  \n✅ Learning from profitable traders\n✅ Trading with a system",

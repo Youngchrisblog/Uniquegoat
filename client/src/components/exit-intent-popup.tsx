@@ -107,7 +107,7 @@ export function ExitIntentPopup() {
               asChild
               data-testid="button-claim-discount"
             >
-              <a href="https://t.me/thewealthprince0" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/shtrading01" target="_blank" rel="noopener noreferrer">
                 Claim 50% Discount Now
               </a>
             </Button>

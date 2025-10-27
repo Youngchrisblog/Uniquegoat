@@ -10,8 +10,8 @@ export function FloatingJoinButton() {
     setShowTelegramModal(true);
   };
 
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
 
   return (
     <>

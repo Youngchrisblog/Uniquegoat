@@ -13,8 +13,8 @@ export default function Testimonials() {
   const [showTelegramModal, setShowTelegramModal] = useState(false);
   const carouselRef = useRef<HTMLDivElement>(null);
   
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
   const { data: allTestimonials, isLoading } = useQuery<Testimonial[]>({
     queryKey: ["/api/testimonials"],
   });

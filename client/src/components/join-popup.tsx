@@ -99,7 +99,7 @@ export function JoinPopup({ delay = 30000, trigger = "time" }: JoinPopupProps) {
               data-testid="button-popup-join"
               asChild
             >
-              <a href="https://t.me/thewealthprince0" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/shtrading01" target="_blank" rel="noopener noreferrer">
                 Message a Mentor Now
               </a>
             </Button>

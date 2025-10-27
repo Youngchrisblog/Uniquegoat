@@ -2,7 +2,7 @@
 
 ## Quick Start: Duplicating for Another Domain
 
-This guide will help you create an exact copy of this Options Trading University site for your brother to use with his own domain and branding.
+This guide will help you create an exact copy of this Elite Options University site for your brother to use with his own domain and branding.
 
 ### Step 1: Fork/Copy the Replit Project
 
@@ -31,8 +31,8 @@ Edit these key values in the code:
 File: `client/src/pages/home.tsx` (and other pages)
 ```typescript
 // Find and replace:
-"Options Trading University" → "Your Brother's Brand Name"
-"https://t.me/thewealthprince0" → "https://t.me/his_telegram"
+"Elite Options University" → "Your Brother's Brand Name"
+"https://t.me/shtrading01" → "https://t.me/his_telegram"
 ```
 
 #### B. Contact Information
@@ -152,7 +152,7 @@ View in admin panel under "Analytics" (when implemented).
 - [ ] Fork the Replit project
 - [ ] Wait for database to auto-seed (check console: "Database seeded successfully")
 - [ ] Change admin username and password
-- [ ] Update all "Options Trading University" text to his brand name
+- [ ] Update all "Elite Options University" text to his brand name
 - [ ] Update all Telegram links to his Telegram handle
 - [ ] Customize stats (member count, etc.) via admin panel
 - [ ] Upload custom testimonial images if desired

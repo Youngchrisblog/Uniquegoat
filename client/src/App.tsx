@@ -62,8 +62,8 @@ function App() {
     setShowTelegramModal(true);
   };
 
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
 
   return (
     <QueryClientProvider client={queryClient}>
@@ -91,7 +91,7 @@ function App() {
                   <Router />
                 </main>
                 <footer className="py-4 px-6 border-t border-border bg-sidebar text-sidebar-foreground text-center text-sm">
-                  <p>© 2025 Options Trading University. All rights reserved.</p>
+                  <p>© 2025 Elite Options University. All rights reserved.</p>
                 </footer>
               </div>
             </div>

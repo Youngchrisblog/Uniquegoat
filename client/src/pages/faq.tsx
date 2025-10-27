@@ -13,8 +13,8 @@ import { TelegramContactModal } from "@/components/telegram-contact-modal";
 export default function FAQ() {
   const [showTelegramModal, setShowTelegramModal] = useState(false);
   
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
   
   const faqs = [
     {
@@ -170,7 +170,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about Options Trading University. Can't find what you're looking for? Message us on Telegram.
+            Everything you need to know about Elite Options University. Can't find what you're looking for? Message us on Telegram.
           </p>
         </div>
       </div>

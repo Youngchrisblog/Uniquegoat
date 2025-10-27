@@ -44,7 +44,7 @@ export function AppSidebar() {
       <SidebarHeader className="border-b border-sidebar-border p-4">
         <div className="flex items-center gap-3">
           <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-secondary">
-            <span className="text-white font-black text-xl">OTU</span>
+            <span className="text-white font-black text-xl">Elite Options</span>
           </div>
           <div className="flex flex-col">
             <span className="font-black text-base bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

@@ -97,8 +97,8 @@ export default function Home() {
     setShowTelegramModal(true);
   };
 
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
 
   return (
     <div className="min-h-screen">
@@ -225,7 +225,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <Card className="border-card-border bg-gradient-to-br from-card to-accent/10" data-testid="card-membership-features">
             <CardHeader>
-              <CardTitle className="text-3xl">OTU Short Term Options Trading</CardTitle>
+              <CardTitle className="text-3xl">Elite Options Short Term Options Trading</CardTitle>
               <CardDescription className="text-base">
                 Great for new and advanced traders looking for insight, support, and quick day trades.
               </CardDescription>

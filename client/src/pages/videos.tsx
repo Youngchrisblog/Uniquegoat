@@ -289,7 +289,7 @@ export default function Videos() {
               data-testid="button-join-telegram"
               asChild
             >
-              <a href="https://t.me/thewealthprince0" target="_blank" rel="noopener noreferrer">
+              <a href="https://t.me/shtrading01" target="_blank" rel="noopener noreferrer">
                 Join Our Community
               </a>
             </Button>

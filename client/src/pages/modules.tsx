@@ -12,8 +12,8 @@ export default function Modules() {
   const [completedModules, setCompletedModules] = useState<Set<number>>(new Set());
   const [showTelegramModal, setShowTelegramModal] = useState(false);
   
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
   const { data: modules, isLoading } = useQuery<Module[]>({
     queryKey: ["/api/modules"],
   });

@@ -32,7 +32,7 @@ export function TikTokDetector() {
     });
   };
 
-  const telegramLink = "https://t.me/thewealthprince0";
+  const telegramLink = "https://t.me/shtrading01";
 
   const copyTelegramLink = () => {
     navigator.clipboard.writeText(telegramLink);

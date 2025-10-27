@@ -13,8 +13,8 @@ import { TelegramContactModal } from "@/components/telegram-contact-modal";
 export default function Contact() {
   const [showTelegramModal, setShowTelegramModal] = useState(false);
   
-  const telegramUsername = "@thewealthprince0";
-  const telegramUrl = "https://t.me/thewealthprince0";
+  const telegramUsername = "@shtrading01";
+  const telegramUrl = "https://t.me/shtrading01";
 
   return (
     <div className="min-h-screen py-12 px-6">

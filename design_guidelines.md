@@ -1,4 +1,4 @@
-# Options Trading University - Compact Design Guidelines
+# Elite Options University - Compact Design Guidelines
 
 ## Design Principles
 Modern fintech (Robinhood, TradingView) + premium education (Masterclass) aesthetic. Professional credibility with approachable warmth, data-driven trust signals, community-focused social proof.
