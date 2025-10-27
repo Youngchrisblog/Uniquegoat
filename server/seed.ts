@@ -7,7 +7,7 @@ async function seed() {
   const testimonialData = [
     {
       name: "Sarah Mitchell",
-      testimonial: "Joining Elite Options was the best decision for my trading career. The mentorship and daily trade ideas have been invaluable. I've gone from losing money to consistently profitable trades.",
+      testimonial: "Joining OTU was the best decision for my trading career. The mentorship and daily trade ideas have been invaluable. I've gone from losing money to consistently profitable trades.",
       profit: "+$12,450 Profit",
       photo: "confident_profession_fe0ae90e.jpg",
       profitImage: "stock_market_trading_51de70e1.jpg"
@@ -21,7 +21,7 @@ async function seed() {
     },
     {
       name: "Emily Rodriguez",
-      testimonial: "What sets Elite Options apart is the community support. Having access to experienced mentors during trading hours and learning from 1,500+ members has accelerated my growth tremendously.",
+      testimonial: "What sets OTU apart is the community support. Having access to experienced mentors during trading hours and learning from 1,500+ members has accelerated my growth tremendously.",
       profit: "+$15,200 Profit",
       photo: "confident_profession_7ebb8479.jpg",
       profitImage: "stock_market_trading_eb8e29af.jpg"
@@ -35,7 +35,7 @@ async function seed() {
     },
     {
       name: "Jessica Park",
-      testimonial: "Started with zero options knowledge. After 3 months with Elite Options, I understand risk management, position sizing, and have a systematic approach. My win rate has improved from 40% to over 70%.",
+      testimonial: "Started with zero options knowledge. After 3 months with OTU, I understand risk management, position sizing, and have a systematic approach. My win rate has improved from 40% to over 70%.",
       profit: "+$11,680 Profit",
       photo: "confident_profession_c8bc4fee.jpg",
       profitImage: "stock_market_trading_6ebeb0f3.jpg"

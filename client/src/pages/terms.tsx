@@ -57,7 +57,7 @@ export default function Terms() {
               <AccordionContent className="px-6 pb-6">
                 <p className="text-muted-foreground leading-relaxed mb-4">
                   Past performance does not guarantee future results. All content shared through Options 
-                  Trading University (Elite Options) or its affiliates is strictly for informational and educational 
+                  Trading University (OTU) or its affiliates is strictly for informational and educational 
                   purposes only.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -79,8 +79,8 @@ export default function Terms() {
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  The purpose of Elite Options University is to educate and inspire traders through 
-                  training modules, market analysis, and community support. Nothing provided by Elite Options 
+                  The purpose of Options Trading University is to educate and inspire traders through 
+                  training modules, market analysis, and community support. Nothing provided by OTU 
                   constitutes personalized investment advice.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -102,7 +102,7 @@ export default function Terms() {
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  Elite Options University, its affiliates, and mentors are not liable for any losses 
+                  Options Trading University, its affiliates, and mentors are not liable for any losses 
                   or damages arising from your use of our services, educational content, or trade ideas.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -123,7 +123,7 @@ export default function Terms() {
               </AccordionTrigger>
               <AccordionContent className="px-6 pb-6">
                 <p className="text-muted-foreground leading-relaxed">
-                  Elite Options University is not a registered investment advisor, broker-dealer, or 
+                  Options Trading University is not a registered investment advisor, broker-dealer, or 
                   financial planner. We provide educational content and community support for traders. 
                   All information is provided for educational purposes only and should not be considered 
                   as financial advice or a recommendation to buy or sell any security.
@@ -137,7 +137,7 @@ export default function Terms() {
         <Card className="border-card-border bg-muted/30">
           <CardContent className="py-6">
             <p className="text-sm text-muted-foreground text-center leading-relaxed">
-              By accessing and using Elite Options University's services, you acknowledge that you have 
+              By accessing and using Options Trading University's services, you acknowledge that you have 
               read, understood, and agreed to this disclaimer. If you do not agree with these terms, please 
               do not use our services.
             </p>

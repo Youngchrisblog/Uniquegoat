@@ -1,8 +1,8 @@
-# Elite Options University
+# Options Trading University
 
 ## Overview
 
-Elite Options University is a full-stack educational web application designed to teach options trading through comprehensive modules, live market data, video lessons, and community testimonials. The platform combines modern fintech aesthetics (inspired by Robinhood and TradingView) with premium educational design (Masterclass-style) to deliver professional credibility with approachable warmth.
+Options Trading University is a full-stack educational web application designed to teach options trading through comprehensive modules, live market data, video lessons, and community testimonials. The platform combines modern fintech aesthetics (inspired by Robinhood and TradingView) with premium educational design (Masterclass-style) to deliver professional credibility with approachable warmth.
 
 The application serves as an educational resource hub featuring:
 - Interactive training modules covering options trading fundamentals to advanced strategies

@@ -170,7 +170,7 @@ export default function FAQ() {
             Frequently Asked Questions
           </h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to know about Elite Options University. Can't find what you're looking for? Message us on Telegram.
+            Everything you need to know about Options Trading University. Can't find what you're looking for? Message us on Telegram.
           </p>
         </div>
       </div>
