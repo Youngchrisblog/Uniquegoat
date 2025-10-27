@@ -11,33 +11,87 @@ interface Notification {
   icon: typeof TrendingUp;
 }
 
-const sampleNotifications: Omit<Notification, "id">[] = [
-  { type: "trade", message: "SPY breaking $580 resistance - Calls heating up", icon: TrendingUp },
-  { type: "join", message: "Michael T. from Texas just joined", icon: Users },
-  { type: "profit", message: "Brandon closed NVDA for +$1,890", icon: DollarSign },
-  { type: "trade", message: "TSLA reclaiming VWAP on 15min - momentum building", icon: Bell },
-  { type: "join", message: "Emma K. from California became a member", icon: Users },
-  { type: "profit", message: "Marcus banked +$2,140 on QQQ 0DTE", icon: DollarSign },
-  { type: "trade", message: "SPX $6050C looking prime - volume increasing", icon: TrendingUp },
-  { type: "join", message: "David R. from Florida joined", icon: Users },
-  { type: "profit", message: "Jessica secured +$975 on SPY scalp", icon: DollarSign },
-  { type: "trade", message: "AMD holding key support at $128 - watching for bounce", icon: Bell },
-  { type: "join", message: "Ryan M. from New York just subscribed", icon: Users },
-  { type: "profit", message: "Tyler made +$640 on AAPL puts", icon: DollarSign },
-  { type: "trade", message: "MSFT consolidating near $440 - breakout setup forming", icon: TrendingUp },
-  { type: "join", message: "Ashley P. from Georgia joined the group", icon: Users },
-  { type: "profit", message: "Carlos locked in +$1,520 on SPX spreads", icon: DollarSign },
-  { type: "trade", message: "META testing resistance at $620 - high volume", icon: Bell },
-  { type: "join", message: "Jordan L. from Arizona became a member", icon: Users },
-  { type: "profit", message: "Samantha closed TSLA for +$2,350 profit", icon: DollarSign },
-  { type: "trade", message: "QQQ $500C getting unusual activity - watching closely", icon: TrendingUp },
-  { type: "profit", message: "Kevin banked +$890 on AMD calls", icon: DollarSign },
-  { type: "join", message: "Nicole B. from Illinois just joined", icon: Users },
-  { type: "trade", message: "GOOGL breaking daily high - momentum play active", icon: Bell },
-  { type: "profit", message: "Derek secured +$1,675 on SPY day trade", icon: DollarSign },
-  { type: "join", message: "Chris W. from Washington joined", icon: Users },
-  { type: "profit", message: "Melissa made +$785 on NVDA scalp", icon: DollarSign },
+// --- START: Notification Generator ---
+
+// Helper function to pick a random item from an array
+const randItem = (arr: any[]) => arr[Math.floor(Math.random() * arr.length)];
+
+// Helper function to generate a random number
+const randInt = (min: number, max: number) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+// Data pools for random generation
+const firstNames = [
+  "Michael", "Emma", "Brandon", "Marcus", "Jessica", "David", "Ryan", "Tyler", "Ashley",
+  "Carlos", "Jordan", "Samantha", "Kevin", "Nicole", "Derek", "Chris", "Melissa", "James",
+  "Olivia", "Liam", "Sophia", "Noah", "Ava", "William", "Isabella", "Mason", "Mia", "Ethan",
+  "Charlotte", "Logan", "Emily", "Jacob", "Harper", "Daniel", "Evelyn", "Alex", "Abigail",
+  "Lucas", "Aiden", "Sarah"
 ];
+const lastInitials = ["A", "B", "C", "D", "E", "F", "G", "H", "J", "K", "L", "M", "N", "P", "R", "S", "T", "W"];
+const locations = [
+  "Texas", "California", "Florida", "New York", "Georgia", "Arizona", "Illinois",
+  "Washington", "Ohio", "Pennsylvania", "Michigan", "Virginia", "North Carolina",
+  "Colorado", "New Jersey", "Tennessee", "Mass.", "Nevada", "Oregon", "Utah"
+];
+const stocks = [
+  "SPY", "QQQ", "NVDA", "TSLA", "AMD", "MSFT", "AAPL", "META", "GOOGL", "AMZN",
+  "NFLX", "COIN", "MARA", "SMCI", "PLTR", "SOFI", "RIVN", "BA", "DIS", "PYPL"
+];
+
+// Generates a single random notification object
+const createRandomNotification = (): Omit<Notification, "id"> => {
+  const type = randItem(["trade", "join", "profit"]);
+
+  if (type === "join") {
+    const name = `${randItem(firstNames)} ${randItem(lastInitials)}.`;
+    const location = randItem(locations);
+    const action = randItem(["just joined", "became a member", "just subscribed", "joined the group"]);
+    return {
+      type: "join",
+      message: `${name} from ${location} ${action}`,
+      icon: Users,
+    };
+  }
+
+  if (type === "profit") {
+    const name = randItem(firstNames);
+    const profit = randInt(400, 3500);
+    const stock = randItem(stocks);
+    const action = randItem(["banked", "closed", "secured", "made", "locked in"]);
+    return {
+      type: "profit",
+      message: `${name} ${action} +$${profit.toLocaleString()} on ${stock}`,
+      icon: DollarSign,
+    };
+  }
+
+  // Otherwise, it's a "trade"
+  const stock = randItem(stocks);
+  const price = randInt(100, 700);
+  const tradeActions = [
+    `breaking $${price} resistance - Calls heating up`,
+    `reclaiming VWAP on 15min - momentum building`,
+    `$${price + 50}C looking prime - volume increasing`,
+    `holding key support at $${price - 20} - watching for bounce`,
+    `consolidating near $${price} - breakout setup forming`,
+    `testing resistance at $${price + 10} - high volume`,
+    `$${price - 50}P getting unusual activity - watching closely`,
+    `breaking daily high - momentum play active`,
+  ];
+  return {
+    type: "trade",
+    message: `${stock} ${randItem(tradeActions)}`,
+    icon: randItem([TrendingUp, Bell]), // Randomize trade icon
+  };
+};
+
+// Create an array of 200 random notifications
+const sampleNotifications: Omit<Notification, "id">[] = Array.from(
+  { length: 200 },
+  createRandomNotification
+);
+
+// --- END: Notification Generator ---
 
 export function LiveNotifications() {
   const [notifications, setNotifications] = useState<Notification[]>([]);
@@ -72,8 +126,9 @@ export function LiveNotifications() {
       }, 5000);
     };
 
+    // Note: User's original interval was 15000ms. Kept as is.
     const interval = setInterval(showRandomNotification, 15000);
-    showRandomNotification();
+    showRandomNotification(); // Show one immediately on load
 
     return () => {
       clearInterval(interval);
